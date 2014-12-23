@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  match 'posts', to: 'posts#index', via: [:options]
   resources :posts
 
   # The priority is based upon order of creation: first created -> highest priority.
